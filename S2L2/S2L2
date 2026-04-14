@@ -1,0 +1,73 @@
+print()
+print()
+print("MENU")
+print()
+print("Esercizio 0: Generatore nome Band")
+print("Esercizio 1: Numero pari o dispari")
+print("Esercizio 2: Calcolo della media")
+print("Esercizio 3: Tabellina di unnumero")
+print("Esercizio 4: Contare vocali di una stringa")
+print("Esercizio 5: Trovare il massimo di una lista")
+print("Esercizio 6: Invertire una stringa")
+print()
+menu = input ("Seleziona esercizio: ")
+print()
+if menu == "1":
+    numero = int(input ("Inserisci un numero: "))
+    if numero % 2 == 0:
+        print()
+        print("Il numero è PARI")
+        print()
+    else:
+        print()
+        print("Il numero è DISPARI")
+        print()
+elif menu == "2":
+    numero1  = int(input ("Inserisci il primo numero: "))
+    numero2 = int(input ("Inserisci il secondo numero: "))
+    media = (numero1 + numero2) / 2
+    print()
+    print("La media tra i numeri dati è: ", media)
+elif menu == "3":
+    numero = int(input ("Inserisci un numero: "))
+    i = 1
+    while i <=10:
+        ris = numero * i
+        print(ris)
+        i +=1
+elif menu == "4":
+    print()
+    frase = input("Inserisci una stringa: ")
+    print()
+    print(frase)
+    vocali = "aeiouAEIOU"
+    contatore = 0
+    for c in frase:
+        if c in vocali:
+            contatore += 1
+    print("le vovali sono: " ,contatore)
+    print()
+elif menu == "5":
+    input_str = input("Inserisci numeri separati da spazio: ")
+    lista = [int(x) for x in input_str.split()]
+    print()
+    print("Il massimo è:", max(lista))
+    print()
+elif menu == "6":
+    stringa = input("Inserire una stringa da invertire: ")
+    stringa_invertita = ""
+    for carattere in stringa:
+        stringa_invertita = carattere + stringa_invertita
+    print()
+    print("La stringa invertita è: " ,stringa_invertita)
+    print()
+elif menu == "0":
+    print()
+    citta = input("Inserire la citta di origine: ")
+    print()
+    animale = input("Inserire il nome del proprio animale domestico: ")
+    band = citta + " " + animale
+    print()
+    print("La tua band si chiama: " ,band)
+    print()
+    
