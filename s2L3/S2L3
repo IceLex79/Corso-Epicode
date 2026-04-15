@@ -1,0 +1,35 @@
+print()
+print()
+print("MENU")
+print()
+print("1) Quadrato")
+print("2) Rettangolo")
+print("3) Cerchio")
+print()
+menu = input ("Seleziona figura geomatrica per i calcoli (1, 2 o 3): ")
+print()
+if menu == "1":
+    lato = int(input ("Calcolo quadrato - Inserire lato:  "))
+    area = lato * lato
+    perimetro = lato * 4
+    print()
+    print(f"Il perimetro misura: {perimetro}")
+    print(f"L'area misura: {area}")
+    print()
+elif menu == "2":
+    latoA = int(input ("Calcolo rettangolo - Inserire lato A:  "))
+    latoB = int(input ("Calcolo rettangolo - Inserire lato B:  "))
+    area = latoA * latoB
+    perimetro = (latoA + latoB) * 2
+    print()
+    print(f"Il perimetro misura: {perimetro}")
+    print(f"L'area misura: {area}")
+    print()
+elif menu == "3":
+    raggio = int(input ("Calcolo cerchio - Inserire raggio:  "))
+    cir = 2 * 3.14 * raggio
+    area = raggio * raggio * 3.14
+    print()
+    print(f"La circonferenza misura: {cir}")
+    print(f"L'area cerchio misura: {area}")
+    print()
